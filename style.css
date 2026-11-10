@@ -6,15 +6,15 @@ Section: B
 */
 
 
+
 body {
     background-color: #F5E6D3;
     color: #4B2E24;
-    font-family: Papyrus, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 
-
-
+/* Header */
 .header {
     background-color: #4B2E24;
     color: white;
@@ -35,7 +35,11 @@ body {
     margin: 12px;
 }
 
+.header a:hover {
+    color: #D2A679;
+}
 
+/* Buttons */
 button {
     background-color: #D2A679;
     color: #3E2723;
@@ -44,21 +48,27 @@ button {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+button:hover {
+    background-color: #B98250;
+    color: white;
+}
 
+/* Welcome section */
 .welcome {
     padding: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
 }
 
-
-
 .welcome-text {
-    display: inline-block;
     width: 43%;
     text-align: left;
-    vertical-align: middle;
 }
 
 .welcome-text h1 {
@@ -70,23 +80,20 @@ button {
     font-size: 24px;
 }
 
-
-
+/* Large coffee picture */
 .coffee-picture {
-    display: inline-block;
-    width: 48%;
-    vertical-align: middle;
+    width: 50%;
 }
 
 .coffee-picture img {
     width: 100%;
-    height: 350px;
+    height: 500px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(75, 46, 36, 0.25);
 }
 
-
-
+/* Menu section */
 .menu-section {
     padding: 30px 20px;
     text-align: center;
@@ -98,8 +105,6 @@ button {
     margin-bottom: 25px;
 }
 
-
-
 .menu-container {
     text-align: center;
 }
@@ -109,11 +114,18 @@ button {
     width: 30%;
     background-color: #F9F1E7;
     border: 2px solid #8B5E3C;
-    border-radius: 8px;
-    padding: 12px;
-    margin: 5px;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 8px;
     vertical-align: top;
     box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(75, 46, 36, 0.15);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(75, 46, 36, 0.25);
 }
 
 .menu-card h3 {
@@ -121,7 +133,7 @@ button {
     font-size: 22px;
 }
 
-
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -138,8 +150,7 @@ th {
     color: #4B2E24;
 }
 
-
-
+/* About section */
 .about {
     padding: 30px;
     text-align: center;
@@ -149,11 +160,48 @@ th {
     color: #4B2E24;
 }
 
-
-
+/* Footer */
 .footer {
     background-color: #4B2E24;
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+/* Mobile screen design */
+@media (max-width: 700px) {
+    .header h2 {
+        display: block;
+        margin: 0 0 15px;
+    }
+
+    .header a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .welcome {
+        display: block;
+    }
+
+    .welcome-text,
+    .coffee-picture {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .welcome-text h1 {
+        font-size: 36px;
+    }
+
+    .coffee-picture img {
+        height: 300px;
+    }
+
+    .menu-card {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
 }
