@@ -1,0 +1,159 @@
+
+/*
+Name: Hajra Rizwan
+Roll Number: i263052
+Section: B
+*/
+
+
+body {
+    background-color: #F5E6D3;
+    color: #4B2E24;
+    font-family: Papyrus, Arial, sans-serif;
+    margin: 0;
+}
+
+
+
+.header {
+    background-color: #4B2E24;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h2 {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 12px;
+}
+
+
+button {
+    background-color: #D2A679;
+    color: #3E2723;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.welcome {
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+.welcome-text {
+    display: inline-block;
+    width: 43%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.welcome-text h1 {
+    color: #4B2E24;
+    font-size: 48px;
+}
+
+.welcome-text p {
+    font-size: 24px;
+}
+
+
+
+.coffee-picture {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.coffee-picture img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+.menu-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    color: #4B2E24;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+
+.menu-container {
+    text-align: center;
+}
+
+.menu-card {
+    display: inline-block;
+    width: 30%;
+    background-color: #F9F1E7;
+    border: 2px solid #8B5E3C;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 5px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.menu-card h3 {
+    color: #6B422F;
+    font-size: 22px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 5px;
+    border-bottom: 1px solid #C4A484;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    color: #4B2E24;
+}
+
+
+
+.about {
+    padding: 30px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #4B2E24;
+}
+
+
+
+.footer {
+    background-color: #4B2E24;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
