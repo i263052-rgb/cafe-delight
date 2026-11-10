@@ -3,185 +3,145 @@ Name: Hajra Rizwan
 Roll Number: i263052
 Section: B
 -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Delight</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
- 
-    <div class="header" id="home">
-
-        <h2>☕ Cafe Delight</h2>
-
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-        <button onclick="placeOrder()">Order Now</button>
-
-    </div>
-
-
- 
-    <div class="welcome">
-
-        <div class="welcome-text">
-
-            <h1>Good Coffee,<br>Good Mood</h1>
-
-            <p>Sip. Relax. Enjoy.</p>
-
-            <a href="#menu">
-                <button>Explore Menu</button>
-            </a>
-
+    <!-- Header & Navigation -->
+    <header class="header" id="home">
+        <div class="logo">
+            <h2>☕ Cafe Delight</h2>
         </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="order-btn" onclick="placeOrder()">Order Now</button>
+    </header>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="welcome">
+            <div class="welcome-text">
+                <h1>Welcome to Cafe Delight – Your Happy Place!</h1>
+                <p>Sip. Relax. Enjoy.</p>
+                <a href="#menu">
+                    <button class="explore-btn">Explore Menu</button>
+                </a>
+            </div>
+            <div class="coffee-picture">
+                <img src="Images/coffee(2).png" alt="A cup of coffee">
+            </div>
+        </section>
 
-       
-        <div class="coffee-picture">
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-container">
 
-            <img src="Images/coffee(2).png" alt="A cup of coffee">
+                <!-- Coffee Card -->
+                <div class="menu-card">
+                    <h3>Coffee ☕</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hot Coffee</td>
+                                <td>300 Rs</td>
+                            </tr>
+                            <tr>
+                                <td>Cold Coffee</td>
+                                <td>400 Rs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-        </div>
+                <!-- Dessert Card -->
+                <div class="menu-card">
+                    <h3>Dessert 🍰</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chocolate Cake</td>
+                                <td>400 Rs</td>
+                            </tr>
+                            <tr>
+                                <td>Strawberry Cake</td>
+                                <td>400 Rs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-    </div>
-
-
-
- 
-    <div class="menu-section" id="menu">
-
-        <h2>Our Menu</h2>
-
-        <div class="menu-container">
-
-
-           
-            <div class="menu-card">
-
-                <h3>Coffee ☕</h3>
-
-                <table>
-
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-
-                    <tr>
-                        <td>Hot Coffee</td>
-                        <td>300 Rs</td>
-                    </tr>
-
-                    <tr>
-                        <td>Cold Coffee</td>
-                        <td>400 Rs</td>
-                    </tr>
-
-                </table>
+                <!-- Milkshakes Card -->
+                <div class="menu-card">
+                    <h3>Milkshakes 🥤</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mango Shake</td>
+                                <td>500 Rs</td>
+                            </tr>
+                            <tr>
+                                <td>Strawberry Shake</td>
+                                <td>500 Rs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
+        </section>
 
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Cafe Delight</h2>
+            <p>
+                Enjoy your favourite coffee, desserts, and milkshakes at Cafe Delight. We serve happiness in every cup!
+            </p>
+        </section>
+    </main>
 
-         
-            <div class="menu-card">
-
-                <h3>Dessert 🍰</h3>
-
-                <table>
-
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-
-                    <tr>
-                        <td>Chocolate Cake</td>
-                        <td>400 Rs</td>
-                    </tr>
-
-                    <tr>
-                        <td>Strawberry Cake</td>
-                        <td>400 Rs</td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-
-          
-            <div class="menu-card">
-
-                <h3>Milkshakes 🥤</h3>
-
-                <table>
-
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-
-                    <tr>
-                        <td>Mango Shake</td>
-                        <td>500 Rs</td>
-                    </tr>
-
-                    <tr>
-                        <td>Strawberry Shake</td>
-                        <td>500 Rs</td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="about" id="about">
-
-        <h2>About Cafe Delight</h2>
-
-        <p>
-            Enjoy your favourite coffee, desserts
-            and milkshakes at Cafe Delight.
-        </p>
-
-    </div>
-
-
-
-    <div class="footer" id="contact">
-
+    <!-- Footer -->
+    <footer class="footer" id="contact">
         <p>Contact Us: cafedelight@example.com</p>
+        <p>© 2026 Cafe Delight. All rights reserved.</p>
+    </footer>
 
-        <p>© 2026 Cafe Delight</p>
-
-    </div>
-
-
+    <!-- JavaScript -->
     <script>
-
         function placeOrder() {
-
             window.alert("Thank you for choosing Cafe Delight! Your order has been confirmed.");
-
             console.log("Order Now button clicked successfully.");
-
         }
-
     </script>
 
 </body>
